@@ -30,5 +30,6 @@
     "lint-staged": "^15.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+    "vite-tsconfig-paths": "^4.2.1"
   }
 }
