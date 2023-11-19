@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx ./src",
+    "lint:fix": "eslint . --ext ts,tsx,js,jsx --fix",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,6 +25,8 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
   }
